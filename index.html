@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL CLOCK</title>
+   <style>
+    body{background-color: red;
+    }
+    .Clock{
+        font-size:65px ;
+        color:#fff;
+        text-align:center;
+        margin-top:5%;
+        border :7px solid #f4d7c9;
+        padding:10px;
+        border-radius: 50px 10px;
+        border-style: inset;
+    
+    }
+    #myTime{
+    font-size: 500%; 
+    margin-top:10%;
+    margin-left:30%;
+    }
+    
+   </style>
+</head>
+<body>
+    <div id="myTime">The Time Is</div>
+    <div id="digitalClock" class="Clock"></div>
+    <script type="text/javascript">
+        function showTime()
+            {
+                let time = new Date();
+                let h = time.getHours();
+                let m = time.getMinutes();
+                let s = time.getSeconds();
+                let session = "AM"
+                if(h>12){
+                    h-= 12;
+                    session ="PM";
+                }
+                if(h<10){ //from 0-9
+                h="0"+h;
+                }     
+                if(m<10){ //from 0-9
+                m="0"+m;
+                }
+                s =(s<10)? "0"+s:s;  //seconds equal to if seconds is greater than 10, concatinate 0 to seconds, else just print seconds
+                document.getElementById("digitalClock").innerHTML= h + ":" + m + ":" + s + " " + session;
+                setTimeout(showTime,1000);      
+            } 
+            showTime(); 
+    </script>
+</body>
+</html>
+
+
+
+ 
