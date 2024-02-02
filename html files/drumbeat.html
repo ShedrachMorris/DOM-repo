@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        input{
+            background-color: gray;
+            font-size: 10px;
+        }
+    </style>
+    <body>
+        
+                <ul id="luno" class="fa">
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>PROJECT</li>
+                </ul>
+                <input type="text" name="file" id="lik">
+                <h2 id="title" class="new">HELLO!</h2>
+                <div>
+                    <button id="btn">Click Me</button>
+                </div>
+          
+        <script>
+            let tab = document.getElementById("title");
+            let btn = document.getElementById("btn");
+            const displayMsg=()=>{
+                console.log("just clicked");
+            }
+            btn.addEventListener('click', displayMsg);
+            
+            /*
+             btn.addEventListener('click', ()=>{
+                console.log("just got clicked");
+            });
+            btn.onclick=()=>{
+                console.log("button clicked");
+            }
+            tab.classList.add("message", "new2");
+            console.log(tab);
+            let min=document.getElementById("luno");
+            let max=document.getElementById("lik");
+            let fax= window.getComputedStyle(max);
+            console.log(fax.fontSize);
+             max.style.cssText="width:200px; height:30px;";
+            console.log(max);
+             luno.removeChild(luno.lastElementChild);
+            luno.insertAdjacentHTML("afterbegin", "<li>CONTACT</li>");
+            console.log(luno.textContent);
+            let si=document.createElement("li");
+            si.innerHTML="BLOG";
+            min.appendChild(si);
+          */
+        </script>
+    </body>
+</html>

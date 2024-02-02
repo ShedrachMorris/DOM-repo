@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1666569921 source:c:\users\23490\documents\doom\main.c
+	<stdio.h>
+	<stdlib.h>
+

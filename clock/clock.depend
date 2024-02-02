@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1689145445 source:c:\users\shedr\onedrive\documents\clock\main.c
+	<stdio.h>
+	<time.h>
+	<unistd.h>
+	<stdlib.h>
+

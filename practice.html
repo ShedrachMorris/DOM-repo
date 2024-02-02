@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        text-decoration: none;
+      }
+      .br {
+        background: aqua;
+        border-radius: 20px;
+      }
+      body {
+        background-color: blueviolet;
+        font-family: "Poppins", sans-serif;
+      }
+      .navbar {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+      }
+      h1 {
+        position: absolute;
+        left: 5%;
+      }
+      .bar {
+        border: 3px solid black;
+        border-radius: 10px;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+      }
+      li,
+      a {
+        margin-right: 15px;
+        color: rgb(226, 43, 43);
+        font-size: 20px;
+      }
+      .button {
+        width: 70px;
+        margin-right: 10px;
+        border-radius: 10px;
+        height: 30px;
+        cursor: pointer;
+        background: #f9c9c9;
+      }
+      ul {
+        margin: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px grey;
+      }
+      ul:hover {
+        transform: scale(1.08);
+        transition: all 0.5s ease-in-out;
+      }
+      .bar:hover {
+        background-color: rgb(190, 188, 188);
+      }
+      .sun {
+        margin: 5px;
+        cursor: pointer;
+        padding: 10px;
+        position: relative;
+        top: 25px;
+      }
+      .section {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 20px;
+      }
+      .meal,
+      .real {
+        border: 1px solid;
+        position: relative;
+        top: 15%;
+      }
+      .real:hover {
+        transform: scale(1.08);
+        transition: all 0.4s ease-in-out;
+      }
+      .meal:hover {
+        transform: scale(1.08);
+        transition: all 0.4s ease-in-out;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="main">
+    <header>
+      <div class="br">
+        <nav class="navbar">
+          <div class="sun"><img src="image/clear.png" height="100" /></div>
+          <h1>LOGO</h1>
+          <ul>
+            <li class="bar"><a href="">Home</a></li>
+            <li class="bar"><a href="">About</a></li>
+            <li class="bar"><a href="">Contact</a></li>
+            <button class="button">Project</button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="sec1 section home">
+        <div class="real">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+          recusandae dolorum perspiciatis, natus accusantium deserunt doloremque
+          ea fugit sapiente nostrum! Provident esse atque enim dicta odit
+          consequuntur unde cum sunt.
+        </div>
+        <div class="meal">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ullam
+          neque quasi placeat blanditiis nobis voluptatum, doloremque sapiente,
+          iure deleniti laboriosam inventore sequi? Architecto labore reiciendis
+          hic laboriosam ad vero.
+        </div>
+        <div class="meal">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ullam
+          neque quasi placeat blanditiis nobis voluptatum, doloremque sapiente,
+          iure deleniti laboriosam inventore sequi? Architecto labore reiciendis
+          hic laboriosam ad vero.
+        </div>
+        <div class="social">
+          <div class="linkedin">
+           <i class="fa fa-bath" aria-hidden="true"></i>
+          </div>
+          <div class="linkedin">
+         <i class="fa fa-eercast" aria-hidden="true"></i>
+          </div>
+          <div class="linkedin">
+           <i class="fa fa-bath" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+      <section class="sec1 section about"></section>
+      <section class="sec1 section contact"></section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
