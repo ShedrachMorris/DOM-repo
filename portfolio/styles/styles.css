@@ -858,7 +858,9 @@ section {
   .container {
     padding: 7rem 11rem;
   }
-
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .contact-content-con {
     flex-direction: column;
   }
@@ -889,7 +891,9 @@ section {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 6rem;
   }
-
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .portfolios {
     grid-template-columns: repeat(2, 1fr);
   }
